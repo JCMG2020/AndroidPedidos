@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <FrameLayout
+        android:id="@+id/Contenedor_Fragments"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="?android:attr/actionBarSize"
+        >
+    </FrameLayout>
+
+
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab_layout"
+        android:elevation="50dp"
+        android:paddingTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:layout_gravity="bottom"
+        android:visibility="visible"
+        android:background="@drawable/tab_shadow"
+        app:tabIndicatorColor="@android:color/transparent"
+        app:tabIndicatorHeight="3dp"
+        app:tabTextColor="#D32222"></com.google.android.material.tabs.TabLayout>
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+

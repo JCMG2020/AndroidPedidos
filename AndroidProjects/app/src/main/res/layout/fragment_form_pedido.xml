@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".View.Fragments.FormPedido">
+
+    <LinearLayout
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="27dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/bienvenida"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Bienvenido Carlos CAguana"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="20sp"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Realizar Pedido"
+            android:textColor="@android:color/black"
+            android:textSize="30sp"
+            android:textStyle="bold"></TextView>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            >
+
+
+            <TextView
+                android:layout_weight="1"
+                android:id="@+id/TVTipoPedido"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tipo de Pedido"
+                android:paddingLeft="10dp"
+                android:imeActionId="6"
+                android:imeOptions="actionUnspecified"
+                android:inputType="text"
+                android:singleLine="true"
+                android:textColor="@android:color/black"
+                android:textColorHint="@color/col_naranja"
+                android:textSize="16sp"
+                android:theme="@style/TextInputLayoutHint"
+                />
+
+            <Spinner
+                android:theme="@style/TextInputLayoutHint"
+                android:id="@+id/SpnTipoPedido"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:layout_weight="1"
+                android:entries="@array/TiposPedidos"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textColorHint="@color/col_naranja"
+                android:textSize="16sp"
+                android:textStyle="bold"></Spinner>
+        </LinearLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/TIDirOrigen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9dp"
+            android:theme="@style/TextInputLayoutHint"
+            android:visibility="visible"
+
+            >
+
+
+            <EditText
+                android:id="@+id/ETDIrOrigen"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="left"
+                android:hint="Direccion de Origen"
+                android:imeActionId="2"
+                android:imeOptions="actionUnspecified"
+                android:inputType="text"
+                android:maxLines="1"
+                android:paddingLeft="5dp"
+                android:paddingBottom="10dp"
+                android:singleLine="true"
+                android:textColor="@android:color/black"
+                android:textColorHint="@color/col_naranja"
+                android:textSize="16sp"
+                />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/TIDirDestino"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9dp"
+            android:theme="@style/TextInputLayoutHint"
+            android:visibility="visible"
+
+            >
+
+
+            <EditText
+                android:id="@+id/ETDirDestino"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="left"
+                android:hint="Direccion Destino"
+                android:inputType="text"
+                android:imeActionId="2"
+                android:imeOptions="actionUnspecified"
+                android:maxLines="1"
+                android:paddingLeft="5dp"
+                android:paddingBottom="10dp"
+                android:singleLine="true"
+                android:textColor="@android:color/black"
+                android:textColorHint="@color/col_naranja"
+                android:textSize="16sp"
+                />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/TIComentario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:theme="@style/TextInputLayoutHint"
+            android:visibility="visible"
+
+            >
+
+
+            <EditText
+                android:id="@+id/ETComentario"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="left"
+                android:hint="Comentario"
+                android:imeActionId="4"
+                android:imeOptions="actionUnspecified"
+                android:inputType="textAutoComplete"
+                android:maxLines="2"
+                android:paddingLeft="5dp"
+                android:paddingBottom="10dp"
+                android:singleLine="true"
+                android:textColor="@android:color/black"
+                android:textColorHint="@color/col_naranja"
+                android:textSize="16sp"
+                />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <Button
+            android:id="@+id/ButtonSolicitarPed"
+            android:text="Solicitar Pedido"
+            android:textColor="@android:color/white"
+            android:background="@drawable/border_ingresar"
+            android:layout_width="match_parent"
+            android:layout_marginTop="15dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorAzulDark"
+            >
+        </Button>
+
+
+    </LinearLayout>
+
+    <include layout="@layout/layout_loading"
+        android:id="@+id/layoutLoadingForm"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:visibility="gone"
+        tools:visibility="visible"/>
+
+</FrameLayout>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.Fragments.ConfPedido">
+
+    <LinearLayout
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="27dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical"
+        >
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Confirma cuando el pedido llegue a su destino!!!"
+            android:textColor="@android:color/black"
+            android:textSize="30sp"
+            android:textAlignment="center"
+            android:layout_marginTop="-10dp"
+            android:textStyle="bold"></TextView>
+
+        <ImageView
+            android:layout_gravity="center"
+            android:id="@+id/imageView"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_marginTop="4dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/pedido"
+
+            />
+
+
+            <Button
+                android:id="@+id/BtnConfirmar"
+                android:text="Confirma tu Pedido"
+                android:textColor="@android:color/white"
+                android:backgroundTint="@color/colorAzulDark"
+                android:background="@drawable/border_ingresar"
+                android:layout_width="match_parent"
+                android:layout_marginTop="15dp"
+                android:layout_height="wrap_content">
+            </Button>
+
+        <Button
+            android:id="@+id/BtnCancelPed"
+            android:text="Cancela tu Pedido"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@color/col_rojosuave"
+            android:background="@drawable/border_cancelar"
+            android:layout_width="match_parent"
+            android:layout_marginTop="15dp"
+            android:layout_height="wrap_content">
+        </Button>
+
+
+
+
+    </LinearLayout>
+
+</FrameLayout>
